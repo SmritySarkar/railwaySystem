@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+
+    <title>Mr. Junction</title>
+    <link rel="shortcut icon" type="image/png" href="{% static '/images/logo.png' %}"/>
+
+    {% comment %}----------------------------------------------
+     Stylesheet for this index is given below 
+     ----------------------------------------- {% endcomment %}
+
+     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+       
+   {% comment %} ==========================================
+   Bootstrap CSS Style goes here 
+   ========================================={% endcomment %}
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+{% comment %}---------------
+ header goes here  
+ ------------{% endcomment %}
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid d-flex justify-content-evenly">
+
+            <div class="brand-logo">
+                <a class="navbar-brand" href="#">
+                <img src="{% static 'images/brand-logo.png' %}" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                Mr. Junction
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+        <div class="nav-items">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    {% comment %}============================
+    image slider goes below 
+    ==========================={% endcomment %}
+<section class="container mt-5" >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active rounded">
+
+            <div class="row  p-5 slider-background bg-gradient d-flex align-items-center justify-content-center ">
+
+              <div class="col-lg-4">
+
+                <h1>Surface railways</h1>
+                <p>With this system, railways are placed above the ground. This is the most widely used rail system on the planet and it’s also among the least expensive. Various mechanisms, such as level crossings, overbridges, and underbridges are provided for crossing the railway, and allow road traffic to flow securely and efficiently across surface railways.</p>
+
+
+                <button class="custom-button-color">Read More</button>
+              </div>
+
+              <div class="col-lg-8">
+                <img src="{% static 'images/railway/1st.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            </div> 
+          </div>
+          <!-- new div starts -->
+          <div class="carousel-item">
+
+            <div class="row  p-5 slider-background bg-gradient d-flex align-items-center justify-content-center">
+
+                <div class="col-lg-4">
+  
+                  <h1>Elevated railways</h1>
+                  <p>In this system, railways are placed at a higher or elevated position above the surface. The rail is carried on the steel deck of a continuous viaduct supported on piers, columns, and other structures, usually constructed from steel, cast iron, concrete, or bricks.This system is more expensive than the previous one because stations, waiting rooms, and offices must be built on higher levels, necessitating the usage of staircases, escalators, and other means of transportation.</p>
+  
+                 
+  
+                  <button class="custom-button-color">Read More</button>
+                </div>
+  
+                <div class="col-lg-8">
+                  <img src="{% static 'images/railway/2nd.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+  
+  
+              </div>
+          </div>
+          <div class="carousel-item">
+  
+            <div class="row  p-5 slider-background bg-gradient d-flex align-items-center justify-content-center ">
+
+                <div class="col-lg-4">
+  
+                  <h1>Underground railways</h1>
+                  <p>In this system, the railway is provided below the ground level. Tunnels are built to transport tracks through them, and an overbridge is required to carry road traffic over railway traffic at every road crossing. Due to ventilation issues in tunnels. electricity is the only source of power available for underground railways.</p>
+  
+                  
+  
+                  <button class="custom-button-color">Read More</button>
+                </div>
+  
+                <div class="col-lg-8">
+                  <img src="{% static 'images/railway/3rd.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+  
+  
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+</header>
+
+{% comment %}======================================
+ Main section goes here 
+ =================================={% endcomment %}
+<main>
+
+</main>
+    
+
+{% comment %}=======================================
+Bootstrap script goes there
+==================================== {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
