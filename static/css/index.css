@@ -42,10 +42,14 @@
     background-color: lightslategrey;
 }
 
+.span-color {
+    color: rgba(189, 60, 10, 0.89);
+}
+
 .fab {
     color: black;
 }
 
 .fab:hover {
-    color: rgb(78, 40, 245);
+    color: rgb(170, 12, 12);
 }
