@@ -10,13 +10,13 @@
 
     {% load static %}
 
-    <title>Registration-Mr. Junction</title>
-    <link rel="shortcut icon" type="image/png" href="{% static '/images/register-logo.png' %}"/>
+    <title>Sign In -Mr. Junction</title>
+    <link rel="shortcut icon" type="image/png" href="{% static '/images/login-logo.png' %}"/>
 
     {% comment %} ==========================================
    Customised CSS Style goes here 
    ========================================={% endcomment %}
-   <link rel="stylesheet" href="{% static 'css/register.css' %}">
+   <link rel="stylesheet" href="{% static 'css/sign-in.css' %}">
 
 
 
@@ -58,10 +58,10 @@
                         <a class="nav-link  fw-bolder " aria-current="page" href="home">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active fw-bolder " href="/register">Sign Up</a>
+                        <a class="nav-link  fw-bolder " href="/register">Sign Up</a>
                         </li>
                         <li class="nav-item ">
-                        <a class="nav-link fw-bolder  " href="/signin">Login</a>
+                        <a class="nav-link fw-bolder active " href="#">Login</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link fw-bolder  " href="#">About Us</a>
@@ -87,66 +87,21 @@
  ================={% endcomment %}
  <form action="" class="container">
  <div class="register-box  ">
-    <h1 class="text-center fw-bolder text-design mt-5">Sign Up</h1>
+    <h1 class="text-center fw-bolder text-design mt-5">Sign In</h1>
     <div class="row">
-    <div class="col-12 d-flex g-2 align-items-center justify-content-center">
-    <div class="col-6 textBox me-2">
+
+    <div class="col-12 d-flex g-2 align-items-center justify-content-center textBox">
+    
     <i class="fas fa-user-tie"></i>
     <input type="text" name="username" placeholder="Username" id="" required>
     </div>
 
-    <div class="col-6 textBox ms-2">
+    <div class="col-12 d-flex g-2 align-items-center justify-content-center textBox">
     <i class="fas fa-lock"></i>
     <input type="password" name="password" placeholder="Password" id="" required>
     </div>
     </div>
 
-    <div class="col-12 d-flex g-2 align-items-center justify-content-center">
-
-    <div class="col-6 textBox me-2">
-    <i class="fas fa-lock"></i>
-    <input type="password" name="cpassword" placeholder="Confirm Password" id="" required>
-    </div>
-
-    <div class="col-6 textBox ms-2">
-    <i class="fas fa-envelope"></i>
-    <input type="email" name="e-mail" placeholder="E-mail" id="" required>
-    </div>
-    </div>
-
-
-
-    <div class="col-12 d-flex g-2 align-items-center justify-content-center">
-    <div class="col-6 textBox me-2">
-      <i class="far fa-address-card"></i>
-    <input type="text" name="address" placeholder="Address" id="" required>
-    </div>
-    <div class="col-6 textBox ms-2">
-    <i class="fas fa-phone"></i>
-    <input type="number" name="phone" placeholder="Phone" id="" required>
-    </div>
-    </div>
-
-    <div class="col-12 gender ">
-    <fieldset>
-        <legend><i class="fas fa-venus-mars"></i> Select your Gender</legend>
-        <p class="gender-style">
-            <label for="female">
-            <input  type="radio" name="gender" id="female"> Female
-        </label>
-    </p>
-    <p class="gender-style">
-        <label for="male">
-        <input  type="radio" name="gender" id="male"> Male
-    </label>
-    </p>
-    
-    
-    </fieldset>
-
-    </div>
-
-    </div>
     <div class="row mt-2">
       <div class="col-6 d-flex  align-items-center justify-content-center">
     <input class="reset-btn fw-bold" type="reset" value="Reset">
@@ -155,7 +110,6 @@
     <input class="button-style fw-bold" type="submit" value="Register">
     </div>
   
-
     </div>
 
  </div>

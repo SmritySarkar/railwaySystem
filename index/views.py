@@ -11,3 +11,8 @@ def index(request):
 def register(request):
 
     return render(request, 'register.html')
+
+
+def signIn(request):
+
+    return render(request, 'signIn.html')
