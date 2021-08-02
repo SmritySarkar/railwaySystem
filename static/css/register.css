@@ -73,7 +73,7 @@
 }
 
 .button-style {
-    width: 75%;
+    width: 60%;
     height: 50px;
     background: none;
     border: 2px solid #4caf50;
@@ -91,7 +91,7 @@
 }
 
 .reset-btn {
-    width: 75%;
+    width: 60%;
     height: 50px;
     background: none;
     border: 2px solid rgb(155, 30, 26);

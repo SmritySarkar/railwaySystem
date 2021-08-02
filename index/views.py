@@ -16,3 +16,8 @@ def register(request):
 def signIn(request):
 
     return render(request, 'signIn.html')
+
+
+def aboutUs(request):
+
+    return render(request, 'aboutUs.html')
