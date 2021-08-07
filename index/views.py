@@ -21,3 +21,12 @@ def signIn(request):
 def aboutUs(request):
 
     return render(request, 'aboutUs.html')
+
+
+def userHome(request):
+
+    return render(request, 'userHome.html')
+
+def userAbout(request):
+
+    return render(request, 'userAbout.html')
