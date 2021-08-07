@@ -30,3 +30,7 @@ def userHome(request):
 def userAbout(request):
 
     return render(request, 'userAbout.html')
+
+def reserve(request):
+
+    return render(request, 'reserve.html')
