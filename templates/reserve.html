@@ -28,7 +28,7 @@
 
     <script src="https://kit.fontawesome.com/1a65e55d4c.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark">
        
 {% comment %}---------------
  header goes here  
@@ -54,7 +54,7 @@
                         <a class="nav-link  fw-bolder " aria-current="page" href="userHome">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link fw-bolder active " href="#">Reserve Ticket</a>
+                        <a class="nav-link fw-bolder active " href="reserve">Reserve Ticket</a>
                         </li>
                         <li class="nav-item ">
                         <a class="nav-link fw-bolder  " href="#">Cancel Reservation</a>
@@ -78,12 +78,53 @@
 
     </header>
 
+
+<main >
+ 
+<section>
+
+{% comment %}====================
+ Reserve Ticket form goes here 
+ ================={% endcomment %}
+<form action="" class="container">
+ <div class="register-box  ">
+    <h1 class="text-center fw-bolder text-design mt-5">Reserve Your Ticket</h1>
+
+    <div class="contents">
+    <input type="text" name="from" id="" placeholder="From" class="input bg-dark">
+    <input type="text" name="to" id="" placeholder="To" class="input bg-dark"><br>
     
 
+    <label class="text-white mt-3"  for="">Depart</label>
+   <input type="datetime-local" name="depart" id="depart" class="tarikh bg-dark">
 
-    
+    <label class="text-white ms-2 mt-3"  for="">Return</label>
+   <input type="datetime-local" name="return" id="return" class="tarikh bg-dark">
 
-        {% comment %}=======================================
+    <input type="number" name="passenger" id="" class="mt-3 bg-dark person" placeholder='Adults'>
+    <input type="number" name="passenger" id="" class=" mt-3 bg-dark person" placeholder='Children'> <br>
+
+
+    <label for="" class=" text-white mt-2 travel" > Travel Class </label>
+    <select name="travelClass" id="" class="bg-dark text-white tarvel-part">
+    <option value="">Choose</option>
+    <option value="">First Class</option>
+    <option value="">Shovon Class</option>
+    <option value="">Shulov Class</option>
+    </select><br>
+
+    <input class=" ms-5 reset-btn fw-bold" type="reset" value="Reset">
+    <input class="ms-5 button-style fw-bold" type="submit" value="Check">
+
+</div>
+ </div>
+</form>
+
+
+</section>
+ </main>
+
+    {% comment %}=======================================
 Bootstrap script goes there
 ==================================== {% endcomment %}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
